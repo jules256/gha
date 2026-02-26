@@ -14,4 +14,5 @@ jobs:
       - name: Use MY_TOKEN secret
         env:
           MY_TOKEN: ${{ secrets.MY_TOKEN }}
-        run: echo "The token is available as an environment variable. GitHub will mask it: $MY_TOKEN"
+        run: |
+          echo "The token is available as an environment variable. GitHub will mask it: $MY_TOKEN"
